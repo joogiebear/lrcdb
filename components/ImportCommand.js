@@ -34,7 +34,7 @@ export default function ImportCommand(props) {
         </Button>
       </div>
       <Typography
-        className="bg-slate-200 p-2 rounded-lg h-full font-mono text-md"
+        className="bg-slate-200 dark:bg-slate-800 p-2 rounded-lg h-full font-mono text-md"
       >
         {command}
       </Typography>
