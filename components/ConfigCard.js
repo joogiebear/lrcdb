@@ -23,13 +23,13 @@ export default function ConfigCard(props) {
             <Typography className="text-xl">
               {config.name}
             </Typography>
-            <Typography className="text-slate-400 dark:text-slate-500 text-xl">
+            <Typography className="text-slate-400 text-xl">
               .yml
             </Typography>
           </div>
           <div className="flex gap-2">
             <Typography
-              className="text-slate-600 dark:text-slate-400 text-sm"
+              className="text-slate-600 text-sm"
             >
               by {config.author}
             </Typography>
@@ -38,13 +38,13 @@ export default function ConfigCard(props) {
         <div className="flex flex-row gap-4 ml-auto">
           <div className="flex flex-col place-content-center items-end">
             <Typography
-              className="text-slate-600 dark:text-slate-400 text-sm"
+              className="text-slate-600 text-sm"
               endDecorator={<FaEye/>}
             >
               {config.views}
             </Typography>
             <Typography
-              className="text-slate-600 dark:text-slate-400 text-sm"
+              className="text-slate-600 text-sm"
               endDecorator={<FaDownload/>}
             >
               {config.downloads}

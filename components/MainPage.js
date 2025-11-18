@@ -3,7 +3,6 @@ import {useEffect, useState} from "react";
 import ConfigGrid from "./ConfigGrid";
 import MoreOptions from "./MoreOptions";
 import SearchPane from "./SearchPane";
-import ThemeToggle from "./ThemeToggle";
 
 const PAGE_SIZE = 50
 
@@ -90,8 +89,6 @@ export default function MainPage(props) {
           className="place-self-end"
         />
 
-        <ThemeToggle />
-
         <a
           href="https://gamersupps.gg/Auxilor"
           target="_blank"
@@ -104,7 +101,7 @@ export default function MainPage(props) {
           />
         </a>
       </div>
-      <div className="md:col-start-2 md:col-span-full p-5 md:overflow-scroll h-screen bg-slate-100 dark:bg-slate-900">
+      <div className="md:col-start-2 md:col-span-full p-5 md:overflow-scroll h-screen bg-slate-100">
         <ConfigGrid
           configs={configs}
           setConfigPreview={setConfigPreview}
