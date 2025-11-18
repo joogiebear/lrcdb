@@ -29,7 +29,7 @@ export default function ConfigPreview(props) {
 
   return (
     <div
-      className="absolute z-10 bg-slate-400/20"
+      className="absolute z-10 bg-slate-400/20 dark:bg-slate-900/90"
     >
       <div className="flex place-content-center place-items-center w-screen h-screen">
         {
@@ -42,12 +42,12 @@ export default function ConfigPreview(props) {
               <Typography className="text-xl">
                 {config.name}
               </Typography>
-              <Typography className="text-slate-400 text-xl">
+              <Typography className="text-slate-400 dark:text-slate-500 text-xl">
                 .yml
               </Typography>
             </div>
             <SyntaxHighlighter language="yaml"
-                               className="bg-slate-200 p-4 rounded-lg h-full font-mono text-xs overflow-scroll">
+                               className="bg-slate-200 dark:bg-slate-800 p-4 rounded-lg h-full font-mono text-xs overflow-scroll">
               {config.contents}
             </SyntaxHighlighter>
             <div className='grid grid-cols-3 grid-rows-1 mt-3 gap-4'>
