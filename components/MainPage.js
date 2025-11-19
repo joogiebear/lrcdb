@@ -64,7 +64,7 @@ export default function MainPage(props) {
 
   return (
     <div className="md:grid md:grid-cols-3 lg:grid-cols-5 2xl:grid-cols-7 overflow-scroll md:overflow-hidden">
-      <div className="md:col-start-1 p-10 flex flex-col place-items-center">
+      <div className="md:col-start-1 p-10 flex flex-col place-items-center bg-white dark:bg-slate-900">
         <Typography
           className="text-center text-7xl font-sans"
         >
@@ -90,8 +90,6 @@ export default function MainPage(props) {
           className="place-self-end"
         />
 
-        <ThemeToggle />
-
         <a
           href="https://gamersupps.gg/Auxilor"
           target="_blank"
@@ -104,7 +102,7 @@ export default function MainPage(props) {
           />
         </a>
       </div>
-      <div className="md:col-start-2 md:col-span-full p-5 md:overflow-scroll h-screen bg-slate-100 dark:bg-slate-900">
+      <div className="md:col-start-2 md:col-span-full p-5 md:overflow-scroll h-screen bg-slate-100 dark:bg-slate-800">
         <ConfigGrid
           configs={configs}
           setConfigPreview={setConfigPreview}
@@ -115,6 +113,7 @@ export default function MainPage(props) {
           authorized={authorized}
         />
       </div>
+      <ThemeToggle />
     </div>
   )
 }
